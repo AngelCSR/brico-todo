@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página formulario.html</title>
+    <link rel="stylesheet" href="estilos2.css" type="text/css">
+</head>
+<body>
+    <h1>Formulario de información</h1>
+    <form action="formulario.php" method="post"></form>
+    <fieldset>
+       <legend>Sus Datos</legend>
+       <label for="Normbreyapellidos">Nombre y apellidos</label>
+       <input type="text" name="Normbreyapellidos" maxlength="50"></imput>
+       <p><label for="contraseña">Contraseña</label>
+        <input type="password" name="contraseña" maxlength="8">
+       </p>
+       <p><label for="usuario">Usuario:</label>
+        <input type="text" value="anonimo" disabled>
+       </p><label for="nivel">
+       Nivel:</label>
+       <p>
+        <label for="nivel">Profesional:</label><input type="radio" name="nivel" value="p" ></p>
+        <p>
+      
+        <label for="nivel">Avanzado:</label><input type="radio" name="nivel" value="a" checked> </p>
+         <p>
+        <label for="nivel">Principiante:</label><input type="radio" name="nivel" value="pi" >
+         </p>
+    
+    </fieldset>
+    <p>
+        <label for="nacionalidad">
+    Nacionalidad:</label><select name="nacionalidad">
+        <option value="esp" selected>Española</option>
+        <option value="ue">Unión Europea</option>
+        <option value="noue">Fuera de la UE</option>
+    </p>
+    </select>
+    <p>
+        <label for="descripción">Descripción:</label>
+    <textarea name="descripción" rows="5" cols="30">
+
+        Escriba sus descripción...</textarea>
+    </p>
+    <label for="info">
+    <input type="checkbox" name="info" checked> Deseo recibir información sobre nobedades y ofertas
+    </label>
+    <p>
+        <label for="consentimiento">
+        <input type="checkbox" name="consentimiento"> Declaro habe leido y aceptar lascondiciones generales del programa y la normativa de protección de datos
+    </label>
+    </p>
+    <p>
+        <label for="foto">Subir foto:</label><input type="file" name="foto">
+    </p>
+    <input type="submit" value="Enviar">
+    <input type="reset" value="Borrar datos">
+</body>
+</html>
