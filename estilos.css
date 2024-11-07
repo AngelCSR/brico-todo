@@ -34,5 +34,8 @@ table{
    background-color: antiquewhite;
 
 }
-body{ background-image: url(images.jpeg);}
-
+body{ background-image: url(descarga\ \(1\).jpeg) ;
+    background-repeat: no-repeat;
+    background-size: cover; 
+   
+    }
